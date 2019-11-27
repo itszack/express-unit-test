@@ -1,0 +1,33 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "description": "Unit testing an application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\" --exit",
+    "coverage": "nyc --reporter=text npm test"
+  },
+  "keywords": [
+    "Node.js",
+    "Mocha",
+    "Chai",
+    "Sinon"
+  ],
+  "author": "itszack",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "rewire": "^4.0.1",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0",
+    "supertest": "^4.0.2"
+  }
+}
